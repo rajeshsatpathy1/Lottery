@@ -3,9 +3,9 @@ const { Web3 } = require('web3');
 const { interface, bytecode } = require('./compile');
 
 const provider = new HDWalletProvider(
-  'REPLACE_WITH_YOUR_MNEMONIC',
+  'diet snow neck yellow urban fashion omit above term robot enemy cactus',
   // remember to change this to your own phrase!
-  'REPLACE WITH YOUR INFURA URL'
+  'https://eth-sepolia.g.alchemy.com/v2/VLvHCP0vCSgBezMWUiijnTv5_ruucnGl'
   // remember to change this to your own endpoint!
 );
 const web3 = new Web3(provider);
@@ -18,6 +18,8 @@ const deploy = async () => {
   const result = await new web3.eth.Contract(JSON.parse(interface))
     .deploy({ data: bytecode })
     .send({ gas: '1000000', from: accounts[0] });
+
+  console.log(interface);
 
   console.log('Contract deployed to', result.options.address);
   provider.engine.stop();
