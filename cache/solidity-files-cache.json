@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/home/kreato/Downloads/Tutorials/Ethereum_Tutorials_repo/Ethereum_Tutorials/Lottery/contracts/Lottery.sol": {
+      "lastModificationDate": 1693166881224,
+      "contentHash": "7b90d05e27e99b3737f6fa1f52722b1b",
+      "sourceName": "contracts/Lottery.sol",
+      "solcConfig": {
+        "version": "0.4.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.4.17"
+      ],
+      "artifacts": [
+        "Lottery"
+      ]
+    }
+  }
+}
